@@ -27,7 +27,7 @@ const FlavorStep = () => {
 
 			<div className={styles.flavorsAreaContainer}>
 				{ flavors && (
-					flavors.map( (i, value) => <Flavor id={i.id} icon={i.icon} name={i.name} />)
+					flavors.map( (i,) => <Flavor id={i.id} icon={i.icon} name={i.name} />)
 				)}
 			</div>
 		</div>

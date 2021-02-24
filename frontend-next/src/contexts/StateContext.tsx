@@ -8,6 +8,7 @@ interface FlavorData {
 	id: number;
 	name: string;
 	icon: string;
+	highlight: boolean;
 };
 
 interface GenericObjectData {

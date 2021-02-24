@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useStateContext } from '../contexts/StateContext';
+import { useRouter } from 'next/router';
 import api from '../services/api';
 
 import styles from '../styles/components/FlavorHighlight.module.css';
@@ -10,6 +12,9 @@ interface FlavorData {
 }
 
 const FlavorHighlight = () => {
+	const { chooseFlavor } = useStateContext();
+	const router = useRouter();
+
 	const [flavor, setFlavor] = useState<FlavorData>(null);
 
 	useEffect( () => {
@@ -22,6 +27,17 @@ const FlavorHighlight = () => {
 		getHighlightFlavor();
 	}, []);
 
+	function handleClick() {
+		chooseFlavor({
+			id: flavor.id,
+			name: flavor.name,
+			icon: flavor.icon,
+			highlight: true
+		});
+
+		router.push('/size');
+	}
+
 	return (
 		<>
 			{ flavor ? (
@@ -33,7 +49,7 @@ const FlavorHighlight = () => {
 
 					<div className={styles.flavorHighlightChoiceContainer}>
 						<h2>Ganhe <strong>pontos</strong> com o sabor do dia!</h2>
-						<button type="button">Eu quero!</button>
+						<button type="button" onClick={handleClick}>Eu quero!</button>
 					</div>
 				</div>
 			) : (

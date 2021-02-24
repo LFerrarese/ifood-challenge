@@ -18,8 +18,11 @@ const SizeStep = () => {
 		<div className={styles.sizeStepContainer}>
 			<div className={styles.chosenFlavor}>
 				<h1>Você escolheu: <strong>{ chosenFlavor.name }</strong></h1>
+				{ chosenFlavor.highlight && <p>E ganhou <strong>20</strong> pontos!</p> }
 				<img src={`http://localhost:3001/static/icons/${chosenFlavor.icon}`} />
 			</div>
+
+			<h1>Escolha o <strong>tamanho</strong> da pizza</h1>
 		</div>
 	)
 }

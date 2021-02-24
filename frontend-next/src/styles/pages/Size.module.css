@@ -24,3 +24,8 @@
 .sizeStepContainer strong {
 	color: var(--red);
 }
+
+.sizeStepContainer > h1 {
+	margin-top: 3rem;
+	text-align: center;
+}

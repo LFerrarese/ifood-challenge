@@ -13,7 +13,7 @@ const Flavor = ({ id, icon, name }: FlavorData) => {
 	const { chooseFlavor } = useStateContext();
 
 	function handleClick() {
-		chooseFlavor({ id, icon, name });
+		chooseFlavor({ id, icon, name, highlight: false });
 		router.push('/size');
 	}
 
