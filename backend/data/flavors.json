@@ -1,0 +1,12 @@
+[
+	{ "id": 1, "name": "Calabresa", "icon": "calabresa.svg" },
+	{ "id": 2, "name": "Margherita", "icon": "margherita.svg" },
+	{ "id": 3, "name": "Portuguesa", "icon": "portuguesa.svg" },
+	{ "id": 4, "name": "Frango com Catupiry", "icon": "frango-catupiry.svg" },
+	{ "id": 5, "name": "Mussarela", "icon": "mussarela.svg"},
+	{ "id": 6, "name": "Napolitana", "icon": "napolitana.svg" },
+	{ "id": 7, "name": "Brigadeiro", "icon": "brigadeiro.svg" },
+	{ "id": 8, "name": "Chocolate Branco", "icon": "chocolate-branco.svg" },
+	{ "id": 9, "name": "Dois Amores", "icon": "dois-amores.svg" },
+	{ "id": 10, "name": "California", "icon": "california.svg" }
+]

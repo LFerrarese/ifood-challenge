@@ -1,0 +1,43 @@
+.flavorStepContainer {
+	height: 100%;
+}
+
+.flavorStepContainer > h1 {
+	position: relative;
+
+	margin-top: 3rem;
+	text-align: center;
+
+	color: var(--title);
+}
+
+.flavorStepContainer > h1:before,
+.flavorStepContainer > h1:after {
+	content: '';
+	position: absolute;
+
+	width: 10%;
+	height: 3px;
+
+	bottom: 0;
+
+	border-radius: 0.25rem;
+
+	background-color: var(--blue);
+}
+
+.flavorStepContainer h1:before {
+	left: 0;
+}
+
+.flavorStepContainer h1:after {
+	right: 0;
+}
+
+.flavorsAreaContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	margin-top: 3rem;
+}

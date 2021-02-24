@@ -1,0 +1,70 @@
+.flavorHighlightContainer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+
+	padding: 1.8rem;
+
+	border-radius: 0.5rem;
+
+	background-color: rgba(0, 0, 0, 0.022);
+}
+
+.flavorHighlightContainer img {
+	width: 10rem;
+}
+
+.flavorHighlightContainer h1 {
+	font-family: 'Permanent Marker', sans-serif;
+	color: var(--title);
+}
+
+.flavorHighlightContainer strong,
+.flavorHighlightChoiceContainer strong {
+	color: var(--red);
+}
+
+.flavorHighlightChoiceContainer {
+	margin-top: 0.75rem;
+	padding: 1rem;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3.25rem;
+	align-items: center;
+
+	border-radius: 0.5rem;
+
+	background-color: rgba(0, 0, 0, 0.022);
+}
+
+.flavorHighlightChoiceContainer h2 {
+	font-size: 1.5rem;
+}
+
+.flavorHighlightChoiceContainer button {
+	padding: 1rem 0;
+
+	border: 0;
+	border-radius: 0.75rem;
+
+	font-size: 1.5rem;
+
+	background-color: var(--red);
+	color: var(--white);
+}
+
+.flavorHighlightChoiceContainer button:hover {
+	background-color: var(--red-highlight);
+}
+
+@media (max-width: 750px) {
+	.flavorHighlightContainer {
+		justify-content: center;
+	}
+
+	.flavorHighlightContainer h1 {
+		margin-top: 1rem;
+	}
+}
