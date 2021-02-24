@@ -11,25 +11,30 @@
 
 	border-radius: 0.75rem;
 
+	text-align: center;
+
 	background-color: rgba(0, 0, 0, 0.025);
 }
 
-.sizeStepContainer div.chosenFlavor .highlight {
+.chosenFlavorHighlight {
 	position: relative;
 
 	background-color: var(--blue);
 }
 
-.sizeStepContainer div.chosenFlavor .highlight:before {
+.chosenFlavorHighlight:before {
 	content: 'Recomendado';
 	position: absolute;
 
 	padding: 0.5rem;
 
-	right: 0;
-	top: 0;
+	right: -0.37rem;
+	top: -0.63rem;
 
-	background-color: var(--blue);
+	background-color: var(--red);
+	color: var(--white);
+
+	border-radius: 0.25rem;
 }
 
 .sizeStepContainer div.chosenFlavor > h1 {
