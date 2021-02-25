@@ -1,6 +1,6 @@
 [
-    { "id": 1, "name": "Pequena" },
-    { "id": 2, "name": "Média" },
-    { "id": 3, "name": "Grande" },
-    { "id": 4, "name": "Gigante" }
+    { "id": 1, "name": "Pequena", "pieces": 4 },
+    { "id": 2, "name": "Média", "pieces": 6 },
+    { "id": 3, "name": "Grande", "pieces": 8 },
+    { "id": 4, "name": "Gigante", "pieces": 12 }
 ]
