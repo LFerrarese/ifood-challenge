@@ -1,0 +1,33 @@
+.doughTypeContainer {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0.7rem;
+
+	padding: 2rem 2.5rem;
+
+	text-align: center;
+
+	border: solid 1px var(--red);
+	border-radius: 0.35rem;
+
+	cursor: pointer;
+
+	transition: 330ms;
+}
+
+.doughTypeContainer:hover {
+	background-color: var(--red-highlight);
+}
+
+.doughTypeContainer:hover h1 {
+	color: var(--white);
+}
+
+.doughTypeContainer h1 {
+	font-size: 1.66rem;
+	color: var(--red-highlight);
+
+	transition: 330ms;
+}

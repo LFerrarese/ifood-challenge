@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
+import { useStateContext } from '../contexts/StateContext';
 import api from '../services/api';
 
 import FlavorHighlight from '../components/FlavorHighlight';
 import Flavor from '../components/Flavor';
 
-import styles from '../styles/pages/Home.module.css';
+import styles from '../styles/pages/FlavorStep.module.css';
 
 const FlavorStep = () => {
+	const { highlightFlavor } = useStateContext();
+
 	const [flavors, setFlavors] = useState(null);
 
 	useEffect( () => {
@@ -27,8 +30,8 @@ const FlavorStep = () => {
 
 			<div className={styles.flavorsAreaContainer}>
 				{ flavors && (
-					flavors.map( (i,) => <Flavor id={i.id} icon={i.icon} name={i.name} />)
-				)}
+					flavors.map( (i,) => highlightFlavor && i.id !== highlightFlavor.id ? <Flavor id={i.id} icon={i.icon} name={i.name} /> : <></>)
+				) }
 			</div>
 		</div>
 	)

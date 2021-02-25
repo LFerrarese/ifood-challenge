@@ -12,7 +12,7 @@ interface FlavorData {
 }
 
 const FlavorHighlight = () => {
-	const { chooseFlavor } = useStateContext();
+	const { chooseFlavor, hasHighlightFlavor } = useStateContext();
 	const router = useRouter();
 
 	const [flavor, setFlavor] = useState<FlavorData>(null);
@@ -22,6 +22,7 @@ const FlavorHighlight = () => {
 			const response = await api.getHighlightFlavor();
 
 			setFlavor(response);
+			hasHighlightFlavor({ id: response.id, name: response.name, icon: response.icon });
 		}
 
 		getHighlightFlavor();

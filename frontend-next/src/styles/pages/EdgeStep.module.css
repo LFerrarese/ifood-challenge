@@ -1,0 +1,18 @@
+.edgeStepContainer {
+	height: 100%;
+}
+
+.edgeStepContainer > h1 {
+	color: var(--title);
+
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.edgeStepContainer > div:last-child {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-top: 3rem;
+}

@@ -1,6 +1,7 @@
-import styles from '../styles/components/Flavor.module.css';
 import { useRouter } from 'next/router';
 import { useStateContext } from '../contexts/StateContext';
+
+import styles from '../styles/components/Flavor.module.css';
 
 interface FlavorData {
 	id: number;

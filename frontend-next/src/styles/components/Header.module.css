@@ -1,0 +1,30 @@
+.headerContainer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+
+	padding: 1.25rem 1.75rem;
+
+	background-color: rgba(0, 0, 0, 0.025);
+
+	border-radius: 0.75rem;
+}
+
+.headerContainer > div h1,
+.headerContainer > div h2 {
+	font-family: 'Permanent Marker', sans-serif;
+}
+
+.headerContainer > div h1 {
+	font-size: 2.6rem;
+	color: var(--red);
+}
+
+.headerContainer > div h2 {
+	color: var(--title);
+}
+
+.headerContainer > img {
+	width: 9rem;
+}

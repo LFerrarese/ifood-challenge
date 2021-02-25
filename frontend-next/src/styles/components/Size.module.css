@@ -1,0 +1,48 @@
+.sizeContainer {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 1.5rem;
+	margin: 1rem;
+	border-radius: 0.62rem;
+
+	background-color: rgba(0, 0, 0, 0.08);
+
+	cursor: pointer;
+
+	transition: 330ms;
+}
+
+.sizeContainer:hover {
+	background-color: var(--red);
+}
+
+.sizeContainer:hover h1 {
+	color: var(--white);
+}
+
+.sizeContainer:hover h2 {
+	color: var(--red-highlight);
+}
+
+.sizeContainer h1 {
+	font-size: 1.62rem;
+	color: var(--text);
+
+	transition: 330ms;
+}
+
+.sizeContainer h1 > strong {
+	color: var(--blue);
+}
+
+.sizeContainer h2 {
+	font-size: 1.02rem;
+	color: var(--red);
+
+	margin-top: 0.15rem;
+
+	transition: 330ms;
+}

@@ -1,0 +1,49 @@
+.doughTypeStepContainer {
+	height: 100%;
+}
+
+.doughTypeStepContainerHeader {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+
+	padding: 1.25rem 1.75rem;
+
+	background-color: rgba(0, 0, 0, 0.025);
+
+	border-radius: 0.75rem;
+}
+
+.doughTypeStepContainerHeader > div h1,
+.doughTypeStepContainerHeader > div h2 {
+	font-family: 'Permanent Marker', sans-serif;
+}
+
+.doughTypeStepContainerHeader > div h1 {
+	font-size: 2.6rem;
+	color: var(--red);
+}
+
+.doughTypeStepContainerHeader > div h2 {
+	color: var(--title);
+}
+
+.doughTypeStepContainerHeader > img {
+	width: 9rem;
+}
+
+.doughTypeStepContainer > h1 {
+	margin-top: 3rem;
+	text-align: center;
+
+	color: var(--title);
+}
+
+.doughTypeStepContainer > div:last-child {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-top: 3rem;
+}
