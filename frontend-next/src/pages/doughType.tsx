@@ -29,17 +29,21 @@ const DoughTypeStep = () => {
 	}, [])
 
 	return (
-		<div className={styles.doughTypeStepContainer}>
-			<Header icon={chosenFlavor.icon} flavor={chosenFlavor.name} ext={[chosenSize.name]} />
+		<>
+			{ chosenSize && (
+				<div className={styles.doughTypeStepContainer}>
+					<Header icon={chosenFlavor.icon} flavor={chosenFlavor.name} ext={[chosenSize.name]} />
 
-			<h1>Qual tipo de massa você quer?</h1>
+					<h1>Qual tipo de massa você quer?</h1>
 
-			<div>
-				{ doughTypes && (
-					doughTypes.map( (i,) => <DoughType id={i.id} name={i.name} borderSize={Math.floor(Math.pow(i.id, 2))} />)
-				) }
-			</div>
-		</div>
+					<div>
+						{ doughTypes && (
+							doughTypes.map( (i,) => <DoughType id={i.id} name={i.name} borderSize={Math.floor(Math.pow(i.id, 2))} />)
+						) }
+					</div>
+				</div>
+			) }
+		</>
 	)
 }
 

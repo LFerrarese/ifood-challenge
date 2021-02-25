@@ -16,13 +16,17 @@ const FlavorHighlight = () => {
 	const router = useRouter();
 
 	const [flavor, setFlavor] = useState<FlavorData>(null);
+	const [points, setPoints] = useState(0);
 
 	useEffect( () => {
 		async function getHighlightFlavor() {
 			const response = await api.getHighlightFlavor();
 
-			setFlavor(response);
-			hasHighlightFlavor({ id: response.id, name: response.name, icon: response.icon });
+			console.log(response);
+
+			setFlavor(response.flavor);
+			setPoints(response.points);
+			hasHighlightFlavor({ id: response.flavor.id, name: response.flavor.name, icon: response.flavor.icon, points: response.points });
 		}
 
 		getHighlightFlavor();
@@ -49,7 +53,7 @@ const FlavorHighlight = () => {
 					</div>
 
 					<div className={styles.flavorHighlightChoiceContainer}>
-						<h2>Ganhe <strong>pontos</strong> com o sabor do dia!</h2>
+						<h2>Ganhe <strong>{ points } pontos</strong> com o sabor do dia!</h2>
 						<button type="button" onClick={handleClick}>Eu quero!</button>
 					</div>
 				</div>

@@ -12,6 +12,7 @@ interface GenericObjectData {
 interface FlavorData extends GenericObjectData {
 	icon: string;
 	highlight?: boolean;
+	points?: number;
 };
 
 interface SizeData extends GenericObjectData {

@@ -4,7 +4,10 @@ const baseUri = "http://localhost:3001";
 
 const api = axios.create({
 	baseURL: baseUri,
-	headers: { "Content-Type": "application/json" }
+	headers: {
+		"Content-Type": "application/json",
+		"Accept": "application/json"
+	}
 });
 
 async function getRequest(uri: string) {
@@ -48,11 +51,15 @@ const requests = {
 	},
 
 	sendPizzaRequest: async (data: PizzaData) => {
-		const response = await api.post('/pizza/save', data);
+		console.log(data);
+
+		const response = await api.post('/pizza/save', JSON.stringify(data));
 
 		if (response.status === 204) {
 			return true;
 		}
+
+		console.log(response.data);
 
 		return false;
 	}
